@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Random Text and Images</title>
+</head>
+<body>
+    <h1>Random Text:</h1>
+    <p>{{ text }}</p>
+
+    <h2>Images:</h2>
+    <img src="{{ url_for('static', filename='image1.png') }}" alt="Image 1" width="300">
+    <img src="{{ url_for('static', filename='image2.png') }}" alt="Image 2" width="300">
+</body>
+</html>
